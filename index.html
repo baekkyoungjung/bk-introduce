@@ -19,7 +19,9 @@
 		<![endif]-->
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+		
+		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<script type="text/javascript" src="./src/lib/typed.js"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.min.js"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react-dom.min.js"></script> -->
@@ -30,116 +32,91 @@
 	</head>
 
 	<body>
-		<div id="wrapper">
-			<section id="invite-section">
-				<div id="invite-says">
-					<div class="up-to-bottom">
-						<h1> 04/14</h1>
-					</div>
-					<div class="bottom-to-up">
-						<br />
-						백경이와 봉주가 <span>결혼</span> 합니다
+		<div id="bk-wrapper">
+			<div id="bk-head">
+				<div id="bk-card">
+					<div class="row">
+						<div class="col-xs-12 col-sm-5">
+							<div class="info-bk">
+								<p>
+									정백경
+								</p>
+								<p>프론트앤드 개발자</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-7">
+							<div class="info-contact">
+								<p>32살</p>
+								<p>baekkyoungjung@gmail.com</p>
+								<p>010-7667-1669</p>
+							</div>
+						</div>
 					</div>
 				</div>
-			</section>
-			<section id="any">
-				<div class="pl30 pr30 pb30">
-					<h2>
-						Nisi velit velit nisi veniam tempor.
-					</h2>
-					Consequat ut est sed sunt in sunt amet magna reprehenderit sed pariatur 
-					reprehenderit ullamco cupidatat duis duis ex sint proident laboris anim 
-					nostrud irure cillum ut cillum culpa tempor laboris exercitation qui sunt 
-					esse minim aute et dolor laborum voluptate magna non magna in consectetur sunt 
-					incididunt pariatur ut magna cillum in.
-				</div>
-				<div class="img">
-					<img src="http://www.weddingritz.com/files/attach/images/185166/452/806/009/55f9707fbe6bb7b63ba860cfa543ba01.jpg" class="img-responsive" alt="dummy1" />
-				</div>
-			</section>
-			<section id="location">
-				<div class="flex-wrap pb30">
-					<div class="col-xs-3 col-sm-12 text-center subject">
-						시간
+
+				<div id="about-bk">
+					<div class="row">
+						<div class="col-xs-12 col-sm-4">
+							<div class="about-contents">
+								<div class="head-desc">경력</div>
+								<p>(주)투블루 2015.07 ~ 2018.01</p>
+								<p>모든 프론트앤드</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="about-contents">
+								<div class="head-desc">기술</div>
+								<p>자바스크립트, 리액트, 라라벨, Sass</p>
+								<p>미티어, 캔버스, ESLint, 이미지 동영상 오디오등 미디어 핸들링</p>
+								<p>업무를 도와줄 각종 자바스크립트 라이브러리</p>
+							</div>
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="about-contents">
+								<div class="head-desc">학력</div>
+								<p>남서울대학교 2006.03 ~ 2011.02</p>
+							</div>
+						</div>
 					</div>
-					<div class="col-xs-9 col-sm-12 text-center">
-						04/14, 11:00 ~ 14:00
-					</div>
+				<div id="bk-say">
+					<p>항상 부족합니다.</p>
+					<p>그래서 더 많이 배우고 있습니다.</p>
+					<p>존경하는 분들 속에서 존경 받는 사람이 되고 싶습니다.</p>
+				</div>
+
 
 				</div>
-				<div class="flex-wrap pb30">
-					<div class="col-xs-3 col-sm-12 text-center subject">
-						위치
-					</div>
-					<div class="col-xs-9 col-sm-12 text-center">
-						서울특별시 강남구 논현동 89-8
-						<br />
-						앤유하우스
-					</div>
-				</div>
-				<p />
-				<div class="flex-wrap pb30">
-					<div class="col-xs-3 col-sm-12 text-center subject">
-						오시는 길
-					</div>
-					<div class="col-xs-9 col-sm-12 text-center">
-						7호선 학동역 9번출구 도보 5분
-						<br />
-						100% 발렛파킹
-					</div>
-				</div>
-				<div class="flex-wrap pb30 pt30">
-					<div class="col-xs-12 text-center">
-						식사
-					</div>
-					<div class="col-xs-12 text-center">
-						<bold>아주 맛잇음!</bold>
-					</div>
-				</div>
-				<div class="comeon">
-					<div id="map" />
-				</div>
-				<p />
-			</section>
-			<section id="memories">
-				<div id="memories-toggle-btn" class="toggle-btn text-center">
-					이건 뭐지?
-				</div>
-				<div class="our-pic row">
-					<div class="col-xs-12 col-sm-6 col-2">
-						<img src="./public/imgs/memories/11.JPG" class="img-responsive" alt="Image" />
-						Est dolore in sint.
-					</div>
-					<div class="col-xs-12 col-sm-6 col-2">
-						<img src="./public/imgs/memories/33.JPG" class="img-responsive" alt="Image" />
-						Lorem ipsum laboris dolore reprehenderit esse dolore in pariatur velit ad.<br />
-						Sit dolore id deserunt sed culpa
-					</div>
-					<div class="col-xs-12 col-sm-6 col-2">
-						<img src="./public/imgs/memories/44.JPG" class="img-responsive" alt="Image" />
-						dolor ut cupidatat nulla labore et qui laboris enim.
-					</div>
-					<div class="col-xs-12 col-sm-6 col-2">
-						<img src="./public/imgs/memories/55.JPG" class="img-responsive" alt="Image" />
-						non culpa tempor qui dolor quis id ut consectetur.<br />
-						Non dolor sit sit exercitation.<br />
-						nostrud sit velit sunt proident veniam ut ut fugiat exercitation.
-					</div>
-					<div class="col-xs-12 col-sm-6 col-2">
-						<img src="./public/imgs/memories/66.JPG" class="img-responsive" alt="Image" />
-						Sit dolore id deserunt sed culpa낄낄낄
-					</div>
-				</div>
-			</section>
-		</div>
-		<div id="now-loading">
-			<div id="heart-wrapper">
-				<div id="heart">
-				</div>
 			</div>
+			<div id="bk-contents">
+				<section id="bk-who-am-i">
+					<div id="bk-typed">
+						<!-- <div class="am-i"></div>
+						<div class="whoishe"></div>
+						<div class="whoishe-re"></div> -->
+					</div>
+				</section>
+				<section id="bk-what-i-did">
+					
+				</section>
+				<section id="bk-what-will-i-do"></section>
+				<section id="bk-history"></section>
+				<section id="jbk-stories"></section>
+			</div>
+			<div id="footer"></div>
 		</div>
-		<!-- <script type="text/babel" src="./src/js/App.js"></script> -->
-		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDthgUzU7IKEhdF6Rc5QIN6WyUtWx5LYkE&callback=initMap"></script>
-		<script src="./src/js/bkbjwedding.js"></script>
+		<script>
+			const amI = '정백경';
+			let whoIsHe = '개발자';
+			whoIsHe = '이제 조금 뭘 아는 프론트앤드 개발자';
+			var options = {
+			  strings: ["", "<span class='type-a'>const</span> amI <span class='type-b'>=</span> <span class='type-b'>'정백경'</span>; \n let whoIsHe = '개발자'; \n whoIsHe = '이제 조금은 뭘 아는 프론트앤드 개발자';"],
+			  typeSpeed: 80,
+			  startDelay: 1000,
+			}
+
+			var typed = new Typed("#bk-typed", options);
+
+			console.log('typedtypedtyped,  ', typed);
+		</script>
 	</body>
 </html>
