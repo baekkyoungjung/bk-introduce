@@ -59,12 +59,12 @@ body {
 	
 
 	#bk-head {
-		margin-top: 3%;
-		margin-left: 15px;
-		margin-right: 15px;
+		margin-top: 10%;
+		// margin-left: 15px;
+		// margin-right: 15px;
 		background-color: #fff;
 		@include respond(over-sm) {
-			margin: 3% 0 0 0;
+			// margin: 10% 0 0 0;
 			background-color: transparent;
 		}
 		#bk-card {
@@ -96,7 +96,7 @@ body {
 		}
 	}
 	#about-bk {
-		margin-top: 20px;
+		margin-top: 50px;
 		text-align: center;
 		padding: 20px;
 		.about-contents {
@@ -132,11 +132,40 @@ body {
 		font-size: 1.2em;
 	}
 	#bk-contents {
-		#bk-who-am-i {
+		section#bk-who-am-i {
+			background-color: #1B2B34;
+			// height: 130vh;
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#F9F9F9+13,1b2b34+50 */
+			// background: #F9F9F9; /* Old browsers */
+			// background: -moz-linear-gradient(top, #F9F9F9 0%, #1b2b34 50%); /* FF3.6-15 */
+			// background: -webkit-linear-gradient(top, #F9F9F9 0%,#1b2b34 50%); /* Chrome10-25,Safari5.1-6 */
+			// background: linear-gradient(to bottom, #F9F9F9 0%,#1b2b34 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#1b2b34',GradientType=0 ); /* IE6-9 */
 			#bk-typed {
+				color: #c5c5c5;
+				font-size: 2em;
+				position: relative;
+				width: 70%;
+				margin: 0 auto;
+				min-height: 100px;
 				white-space: pre;
+				padding: 100px 50px 50px 50px;
 			}
 		}
+		.bk-container {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.type-reserved-word {
+		color: #c594c5;
+	}
+	.type-variable {
+		color: #fff;
+	}
+	.type-c {
+		
 	}
 
 }

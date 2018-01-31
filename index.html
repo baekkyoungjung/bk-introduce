@@ -20,7 +20,7 @@
 
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		
-		<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+		<!-- <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
 		<script type="text/javascript" src="./src/lib/typed.js"></script>
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.1/react.min.js"></script> -->
 		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js"></script> -->
@@ -78,45 +78,69 @@
 							</div>
 						</div>
 					</div>
-				<div id="bk-say">
+				<!-- <div id="bk-say">
 					<p>항상 부족합니다.</p>
 					<p>그래서 더 많이 배우고 있습니다.</p>
 					<p>존경하는 분들 속에서 존경 받는 사람이 되고 싶습니다.</p>
-				</div>
+				</div> -->
 
 
 				</div>
 			</div>
 			<div id="bk-contents">
 				<section id="bk-who-am-i">
-					<div id="bk-typed">
-						<!-- <div class="am-i"></div>
-						<div class="whoishe"></div>
-						<div class="whoishe-re"></div> -->
+					<div class="bk-container">
+						<div id="bk-typed">
+							<!-- <div class="am-i"></div>
+							<div class="whoishe"></div>
+							<div class="whoishe-re"></div> -->
+						</div>
 					</div>
 				</section>
 				<section id="bk-what-i-did">
-					
+					<div class="bk-container">
+						<h3>
+							하는 것
+						</h3>
+						<p>html, javascript, css를 시작으로 react, </p>
+					</div>
 				</section>
-				<section id="bk-what-will-i-do"></section>
-				<section id="bk-history"></section>
-				<section id="jbk-stories"></section>
+				<section id="bk-what-will-i-do">
+					<div class="bk-container">
+						<h3>
+							하고 싶은 것
+						</h3>
+						<p>배우고 싶은 것들</p>
+					</div>
+				</section>
+				<section id="bk-history">
+					<div class="bk-container">
+						<h3>
+							개발자가 되고 난 뒤
+						</h3>
+						<p>얼또, 책, 영어 등등 기타 활동들</p>
+					</div>
+				</section>
+				<section id="jbk-stories">
+					<div class="bk-container">
+						<h3>
+							구구절절
+						</h3>
+						<p>개발을 시작했을때(그땐 몰랐지만..) web은 변화하고 있었고, javascript는 대격변이 진행되고 있었습니다.
+							조금 더 빠른, 조금 더 편한, 조금 더 효율적인 tool과 언어, 수 많은 library들이 쏟아져 나와 개발자는 서비스를 만들기 위한
+						 수단을 입맛에 맛게 선택하는게 가능한 시기였습니다.</p>
+						<p>처음 개발을 배웠던 2015년.. jquery못하면 취업못한다는 말이 있었는데, 어느새 jquery를 쓰면 취업못한다는 말이 나옵니다.
+							단순히 html, css퍼블리싱, button onclick event 연결하던 일이라고 배웠었지만 지금은 front-back-infra등 서비스의 전반적인
+							구조와 설계를 알아야 한다고 생각합니다. 물론 전문적인 back-end, infra 서버구축, 설계는 못하더라도 back-infra단에서
+							어떤 일이 발생했을때, 그 문제가 front-end에 미치는 영향이 무엇이고, 어떤 것을 대비 해야하는지 이해 할 수 있습니다.
+						</p>
+
+
+					</div>
+				</section>
 			</div>
 			<div id="footer"></div>
 		</div>
-		<script>
-			const amI = '정백경';
-			let whoIsHe = '개발자';
-			whoIsHe = '이제 조금 뭘 아는 프론트앤드 개발자';
-			var options = {
-			  strings: ["", "<span class='type-a'>const</span> amI <span class='type-b'>=</span> <span class='type-b'>'정백경'</span>; \n let whoIsHe = '개발자'; \n whoIsHe = '이제 조금은 뭘 아는 프론트앤드 개발자';"],
-			  typeSpeed: 80,
-			  startDelay: 1000,
-			}
-
-			var typed = new Typed("#bk-typed", options);
-
-			console.log('typedtypedtyped,  ', typed);
-		</script>
+		<script type="text/javascript" src="./src/bk-introduce.js"></script>
 	</body>
 </html>
