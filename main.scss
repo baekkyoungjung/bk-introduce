@@ -51,7 +51,7 @@ $break-lg: 1400px;
 }
 
 body {
-	font-family: notoSans_ko_thin;
+	font-family: KoPubDotum_ProL;
 	background-color: rgba(200, 200, 200, 0.1);
 }
 
@@ -131,31 +131,63 @@ body {
 		line-height: 1em;
 		font-size: 1.2em;
 	}
+	.bk-container {
+		width: 60%;
+		margin: 0 auto;
+	}
+	#bk-who-am-i {
+		background-color: #1B2B34;
+		min-height: 330px;
+		height: 50vh;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#F9F9F9+13,1b2b34+50 */
+		// background: #F9F9F9; /* Old browsers */
+		// background: -moz-linear-gradient(top, #F9F9F9 0%, #1b2b34 50%); /* FF3.6-15 */
+		// background: -webkit-linear-gradient(top, #F9F9F9 0%,#1b2b34 50%); /* Chrome10-25,Safari5.1-6 */
+		// background: linear-gradient(to bottom, #F9F9F9 0%,#1b2b34 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#1b2b34',GradientType=0 ); /* IE6-9 */
+		#bk-typed {
+			text-align: center;
+			color: #c5c5c5;
+			font-size: 2em;
+			position: relative;
+			// width: 70%;
+			margin: 0 auto;
+			min-height: 100px;
+			white-space: pre;
+			padding: 50px 0;
+		}
+	}
 	#bk-contents {
-		section#bk-who-am-i {
-			background-color: #1B2B34;
-			// height: 130vh;
-			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#F9F9F9+13,1b2b34+50 */
-			// background: #F9F9F9; /* Old browsers */
-			// background: -moz-linear-gradient(top, #F9F9F9 0%, #1b2b34 50%); /* FF3.6-15 */
-			// background: -webkit-linear-gradient(top, #F9F9F9 0%,#1b2b34 50%); /* Chrome10-25,Safari5.1-6 */
-			// background: linear-gradient(to bottom, #F9F9F9 0%,#1b2b34 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-			// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#1b2b34',GradientType=0 ); /* IE6-9 */
-			#bk-typed {
-				color: #c5c5c5;
-				font-size: 2em;
-				position: relative;
-				width: 70%;
-				margin: 0 auto;
-				min-height: 100px;
-				white-space: pre;
-				padding: 100px 50px 50px 50px;
+		font-size: 1.4em;
+		line-height: 1.65em;
+		h3 {
+			font-weight: bold;
+			font-size: 1.7em;
+		}
+		> section {
+			padding: 30px 0;
+		}
+		> section:nth-child(even) {
+			background-color: #f0f0f0;
+		}
+		#bk-portfolio {
+			#bk-tyle {
+				#tyle-landing {
+					width: 700px;
+					background-image: url("./public/imgs/tyle-landing.jpg");
+					background-repeat: no-repeat;
+					background-size: auto;
+					margin: 0 auto;
+					min-height: 345px;
+					color: transparent;
+				}
 			}
 		}
-		.bk-container {
-			width: 80%;
-			margin: 0 auto;
-		}
+	}
+	.piccaption {
+		font-size: 0.8em;
+		// color: #aaa;
+		opacity: 0.4;
 	}
 
 	.type-reserved-word {
@@ -171,7 +203,7 @@ body {
 }
 
 @font-face {
-	font-family: 'notoSans_ko_thin';
-	src: url('./public/fonts/notoSans_ko_thin.woff') format('woff');
+	font-family: 'KoPubDotum_ProL';
+	src: url('./public/fonts/KoPubDotum_ProL.woff') format('woff');
 }
 
