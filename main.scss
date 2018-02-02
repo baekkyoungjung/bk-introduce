@@ -158,8 +158,12 @@ body {
 		}
 	}
 	#bk-contents {
+		font-family: NanumMyeongjo;
 		font-size: 1.4em;
 		line-height: 1.65em;
+		p {
+			margin: 0 0 15px;
+		}	
 		h3 {
 			font-weight: bold;
 			font-size: 1.7em;
@@ -205,5 +209,17 @@ body {
 @font-face {
 	font-family: 'KoPubDotum_ProL';
 	src: url('./public/fonts/KoPubDotum_ProL.woff') format('woff');
+}
+@font-face {
+	font-family: 'KoPubBatang_ProL.woff';
+	src: url('./public/fonts/KoPubBatang_ProL.woff.woff') format('woff');
+}
+@font-face {
+	font-family: 'notoSans_ko_regular.woff';
+	src: url('./public/fonts/notoSans_ko_regular.woff.woff') format('woff');
+}
+@font-face {
+	font-family: 'NanumMyeongjo.woff';
+	src: url('./public/fonts/NanumMyeongjo.woff.woff') format('woff');
 }
 
