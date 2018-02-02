@@ -132,7 +132,12 @@ body {
 		font-size: 1.2em;
 	}
 	.bk-container {
-		width: 60%;
+		width: 85%;
+		@include respond(over-md) {
+			width: 60%;
+			// margin: 10% 0 0 0;
+			background-color: transparent;
+		}
 		margin: 0 auto;
 	}
 	#bk-who-am-i {
@@ -160,13 +165,18 @@ body {
 	#bk-contents {
 		font-family: NanumMyeongjo;
 		font-size: 1.4em;
-		line-height: 1.65em;
+		line-height: 1.68em;
 		p {
 			margin: 0 0 15px;
+			text-indent: 10px;
 		}	
 		h3 {
 			font-weight: bold;
 			font-size: 1.7em;
+		}
+		h3, h4 {
+			font-size: 1.25em;
+			margin-bottom: 15px;
 		}
 		> section {
 			padding: 30px 0;
@@ -175,17 +185,22 @@ body {
 			background-color: #f0f0f0;
 		}
 		#bk-portfolio {
+			#bk-interview {
+				background-image: url("./public/imgs/gpeople-bk.jpg");
+			}
 			#bk-tyle {
 				#tyle-landing {
-					width: 700px;
 					background-image: url("./public/imgs/tyle-landing.jpg");
-					background-repeat: no-repeat;
-					background-size: auto;
-					margin: 0 auto;
-					min-height: 345px;
-					color: transparent;
 				}
 			}
+		}
+		.pic-thumb {
+			width: 700px;
+			background-repeat: no-repeat;
+			background-size: auto;
+			margin: 0 auto;
+			min-height: 345px;
+			color: transparent;
 		}
 	}
 	.piccaption {
