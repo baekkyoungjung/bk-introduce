@@ -59,14 +59,13 @@ body {
 	
 
 	#bk-head {
-		margin-top: 10%;
+		padding-top: 10%;
 		background-color: #fff;
-		@include respond(over-sm) {
+		@include respond(over-md) {
 			background-color: transparent;
 		}
 		#bk-card {
 			width: 80%;
-			font-size: 1em;
 			background-color: #fff;
 			padding: 20px;
 			margin: 0 auto;
@@ -77,16 +76,16 @@ body {
 				}
 			}
 			.info-contact {
-				margin-top: -10%;
+				padding-top: -10%;
 				text-align: right;
 			}
-			@include respond(over-sm) {
+			@include respond(over-md) {
 				width: 35%;
 				border-radius: 5px;
 				border: 1px solid rgba(0, 0, 0, 0.1);
 
 				.info-contact {
-					margin-top: 40%!important;
+					padding-top: 40%!important;
 				}
 			}
 		}
@@ -111,13 +110,13 @@ body {
 		}
 	}
 
-	#bk-say {
-		background-color: #fff;
-		margin-top: 20px;
-		padding: 50px;
-		line-height: 1em;
-		font-size: 1.2em;
-	}
+	// #bk-say {
+	// 	background-color: #fff;
+	// 	margin-top: 20px;
+	// 	padding: 50px;
+	// 	line-height: 1em;
+	// 	font-size: 1.2em;
+	// }
 	.bk-container {
 		width: 85%;
 		@include respond(over-md) {
@@ -144,30 +143,35 @@ body {
 	}
 	#bk-contents {
 		font-family: NanumMyeongjo;
-		font-size: 1.4em;
+		font-size: 1.3em;
+		@include respond(over-md) {
+			font-size: 1.4em;
+		}
 		line-height: 1.68em;
-		p {
-			margin: 0 0 15px;
-			text-indent: 7px;
-		}	
-		h3 {
-			font-weight: bold;
-			font-size: 1.7em;
-		}
-		h3, h4 {
-			font-size: 1.25em;
-			margin-bottom: 15px;
-		}
-		> section {
-			padding: 30px 0;
-		}
-		> section:nth-child(even) {
-			background-color: #f0f0f0;
-		}
 		.no-indent {
 			text-indent: 0!important;
 		}
 		#bk-portfolio {
+			.bk-container {
+				line-height: 1.55em;
+				font-size: 0.9em;
+				h2 {
+					color: rgba(48, 48, 48, 0.8);
+					text-align: center!important;
+					// font-size: 1.6em;
+				}
+				// width: 70%;
+			}
+			.bk-container > div {
+				// width: 90%;
+				// float: left;
+				padding-top: 20px;
+				// text-align: left;
+				&:nth-child(even) {
+					// text-align: right;
+					// float: right;
+				}
+			}
 			#tyle-landing-screenshot {
 				background-image: url("./public/imgs/tyle-landing.jpg");
 			}
@@ -189,6 +193,24 @@ body {
 			margin: 0 auto;
 			min-height: 345px;
 			color: transparent;
+		}
+		p {
+			margin: 0 0 15px;
+			text-indent: 7px;
+		}	
+		h3 {
+			font-weight: bold;
+			font-size: 1.7em;
+		}
+		h3, h4 {
+			font-size: 1.25em;
+			margin-bottom: 15px;
+		}
+		> section {
+			padding: 30px 0;
+		}
+		> section:nth-child(even) {
+			background-color: #f0f0f0;
 		}
 	}
 	.piccaption {
