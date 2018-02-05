@@ -60,11 +60,8 @@ body {
 
 	#bk-head {
 		margin-top: 10%;
-		// margin-left: 15px;
-		// margin-right: 15px;
 		background-color: #fff;
 		@include respond(over-sm) {
-			// margin: 10% 0 0 0;
 			background-color: transparent;
 		}
 		#bk-card {
@@ -87,7 +84,6 @@ body {
 				width: 35%;
 				border-radius: 5px;
 				border: 1px solid rgba(0, 0, 0, 0.1);
-				// border: none;
 
 				.info-contact {
 					margin-top: 40%!important;
@@ -100,17 +96,9 @@ body {
 		text-align: center;
 		padding: 20px;
 		.about-contents {
-			// border-right: 1px solid #eee;
 			padding: 20px 0;
 			&:after {
 				content: "";
-				// width: 1px;
-				// height: 40%;
-				// background-color: #eee;
-				// position: absolute;
-				// display: block;
-				// top: 30%;
-				// right: 0;
 			}
 			min-height: 100px;
 			> div.head-desc {
@@ -120,7 +108,6 @@ body {
 			}
 		}
 		.about-contents:not(:last-child) {
-			// border: none;
 		}
 	}
 
@@ -135,7 +122,6 @@ body {
 		width: 85%;
 		@include respond(over-md) {
 			width: 60%;
-			// margin: 10% 0 0 0;
 			background-color: transparent;
 		}
 		margin: 0 auto;
@@ -144,12 +130,6 @@ body {
 		background-color: #1B2B34;
 		min-height: 330px;
 		height: 50vh;
-		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#F9F9F9+13,1b2b34+50 */
-		// background: #F9F9F9; /* Old browsers */
-		// background: -moz-linear-gradient(top, #F9F9F9 0%, #1b2b34 50%); /* FF3.6-15 */
-		// background: -webkit-linear-gradient(top, #F9F9F9 0%,#1b2b34 50%); /* Chrome10-25,Safari5.1-6 */
-		// background: linear-gradient(to bottom, #F9F9F9 0%,#1b2b34 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#F9F9F9', endColorstr='#1b2b34',GradientType=0 ); /* IE6-9 */
 		#bk-typed {
 			text-align: center;
 			color: #c5c5c5;
@@ -168,7 +148,7 @@ body {
 		line-height: 1.68em;
 		p {
 			margin: 0 0 15px;
-			text-indent: 10px;
+			text-indent: 7px;
 		}	
 		h3 {
 			font-weight: bold;
@@ -184,20 +164,28 @@ body {
 		> section:nth-child(even) {
 			background-color: #f0f0f0;
 		}
+		.no-indent {
+			text-indent: 0!important;
+		}
 		#bk-portfolio {
-			#bk-interview {
+			#tyle-landing-screenshot {
+				background-image: url("./public/imgs/tyle-landing.jpg");
+			}
+			#bk-invite-screenshot {
+				background-image: url("./public/imgs/invite-bkbj.jpg");
+			}
+			#bk-interview-screenshot {
 				background-image: url("./public/imgs/gpeople-bk.jpg");
 			}
-			#bk-tyle {
-				#tyle-landing {
-					background-image: url("./public/imgs/tyle-landing.jpg");
-				}
+			#bk-interview-b-screenshot {
+				background-image: url("./public/imgs/team-interview.jpg");
 			}
 		}
 		.pic-thumb {
 			width: 700px;
 			background-repeat: no-repeat;
 			background-size: auto;
+			background-position: center center;
 			margin: 0 auto;
 			min-height: 345px;
 			color: transparent;
@@ -205,7 +193,6 @@ body {
 	}
 	.piccaption {
 		font-size: 0.8em;
-		// color: #aaa;
 		opacity: 0.4;
 	}
 
