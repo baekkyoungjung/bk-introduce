@@ -144,7 +144,7 @@ body {
 	#bk-contents {
 		font-family: NanumMyeongjo;
 		font-size: 1.3em;
-		@include respond(over-md) {
+		@include respond(over-sm) {
 			font-size: 1.4em;
 		}
 		line-height: 1.68em;
