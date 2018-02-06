@@ -110,13 +110,6 @@ body {
 		}
 	}
 
-	// #bk-say {
-	// 	background-color: #fff;
-	// 	margin-top: 20px;
-	// 	padding: 50px;
-	// 	line-height: 1em;
-	// 	font-size: 1.2em;
-	// }
 	.bk-container {
 		width: 85%;
 		@include respond(over-md) {
@@ -143,9 +136,9 @@ body {
 	}
 	#bk-contents {
 		font-family: NanumMyeongjo;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		@include respond(over-sm) {
-			font-size: 1.4em;
+			font-size: 1.25em;
 		}
 		line-height: 1.68em;
 		.no-indent {
@@ -178,14 +171,25 @@ body {
 			#bk-invite-screenshot {
 				background-image: url("./public/imgs/invite-bkbj.jpg");
 			}
+			#bk-introduce-screenshot {
+				background-image: url("./public/imgs/bk-introduce.jpg");
+			}
 			#bk-interview-screenshot {
 				background-image: url("./public/imgs/gpeople-bk.jpg");
 			}
 			#bk-interview-b-screenshot {
 				background-image: url("./public/imgs/team-interview.jpg");
 			}
+			#bk-ckoverflow h2 span {
+				font-family: Arial;
+			}
+			.ck-logo {
+				width: 35px;
+				vertical-align: bottom;
+			}
 		}
 		.pic-thumb {
+			text-indent: -99999em;
 			width: 700px;
 			background-repeat: no-repeat;
 			background-size: auto;
@@ -200,17 +204,20 @@ body {
 		}	
 		h3 {
 			font-weight: bold;
-			font-size: 1.7em;
-		}
-		h3, h4 {
-			font-size: 1.25em;
 			margin-bottom: 15px;
+			font-size: 1.8em;
 		}
 		> section {
 			padding: 30px 0;
 		}
 		> section:nth-child(even) {
 			background-color: #f0f0f0;
+		}
+		a:focus {
+			outline: none;	
+		}
+		hr {
+			border-top: 1px solid #d2d2d2
 		}
 	}
 	.piccaption {
@@ -223,9 +230,6 @@ body {
 	}
 	.type-variable {
 		color: #fff;
-	}
-	.type-c {
-		
 	}
 
 }
