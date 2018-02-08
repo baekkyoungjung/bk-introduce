@@ -286,7 +286,12 @@ html.no-touch {
 			left: 30px;
 			top: 30px;
 			a {
+				-webkit-transition: all 100ms linear;
+				-moz-transition: all 100ms linear;
+				-ms-transition: all 100ms linear;
+				-o-transition: all 100ms linear;
 				transition: all 100ms linear;
+				
 				opacity: 0.35;
 				text-decoration: none;
 				&.active {
