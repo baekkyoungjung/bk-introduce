@@ -183,21 +183,6 @@ body {
 				}
 				// width: 70%;
 			}
-			#table-content {
-				position: absolute;
-				left: 30px;
-				top: 30px;
-
-				a {
-					transition: all 100ms linear;
-					opacity: 0.35;
-					text-decoration: none;
-					&.active {
-						opacity: 1;
-						text-decoration: #333 underline;
-					}
-				}
-			}
 			.bk-container > div {
 				// width: 90%;
 				// float: left;
@@ -292,6 +277,23 @@ body {
 		background-color: #1B2B34;
 	}
 
+}
+
+html.no-touch {
+	#table-content {
+		position: absolute;
+		left: 30px;
+		top: 30px;
+		a {
+			transition: all 100ms linear;
+			opacity: 0.35;
+			text-decoration: none;
+			&.active {
+				opacity: 1;
+				text-decoration: #333 underline;
+			}
+		}
+	}
 }
 
 @font-face {
