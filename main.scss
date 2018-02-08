@@ -134,7 +134,7 @@ body {
 			position: relative;
 			// width: 70%;
 			margin: 0 auto;
-			min-height: 200px;
+			height: 300px;
 			white-space: pre;
 			padding: 50px 0;
 		}
@@ -172,6 +172,7 @@ body {
 			// }
 		}
 		#bk-portfolio {
+			position: relative;
 			.bk-container {
 				line-height: 1.55em;
 				font-size: 0.9em;
@@ -181,6 +182,21 @@ body {
 					// font-size: 1.6em;
 				}
 				// width: 70%;
+			}
+			#table-content {
+				position: absolute;
+				left: 30px;
+				top: 30px;
+
+				a {
+					transition: all 100ms linear;
+					opacity: 0.35;
+					text-decoration: none;
+					&.active {
+						opacity: 1;
+						text-decoration: #333 underline;
+					}
+				}
 			}
 			.bk-container > div {
 				// width: 90%;
@@ -205,6 +221,9 @@ body {
 			}
 			#bk-introduce-screenshot {
 				background-image: url("./public/imgs/bk-introduce.jpg");
+			}
+			#bk-ckoverflow-screenshot {
+				background-image: url("./public/imgs/chicken-overflow.jpg");
 			}
 			#bk-interview-screenshot {
 				background-image: url("./public/imgs/gpeople-bk.jpg");
@@ -266,8 +285,8 @@ body {
 	}
 
 	#footer {
-		padding: 15px;
-		color: #fff;
+		padding: 20px;
+		color: #e0e0e0;
 		font-size: 1.4em;
 		text-align: center;
 		background-color: #1B2B34;
