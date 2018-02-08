@@ -8,9 +8,7 @@ w.onload = () => {
 		startDelay: 1000,
 	};
 	const typed = new Typed("#bk-typed", options);
-	d.documentElement.classList.contains('no-touch') && !Modernizr.touch && portFolioScrollEvt();
-	
-	
+	portFolioScrollEvt();
 };
 
 const offset = el => {
@@ -49,8 +47,12 @@ const portFolioScrollEvt = () => {
 	let activeTable = portfolioArr[0];
 
 	w.addEventListener('scroll', () => {
-		isSetTableFixed();
-		isSetActiveTable();
+		if (d.documentElement.classList.contains('no-touch') && !Modernizr.touch && window.innerWidth > 1200) {
+			isSetTableFixed();
+			isSetActiveTable();
+		} else {
+			d.getElementById('table-content').style.position = 'static';
+		}
 	});
 	const isSetActiveTable = () => {
 		const goal = w.pageYOffset;

@@ -281,16 +281,18 @@ body {
 
 html.no-touch {
 	#table-content {
-		position: absolute;
-		left: 30px;
-		top: 30px;
-		a {
-			transition: all 100ms linear;
-			opacity: 0.35;
-			text-decoration: none;
-			&.active {
-				opacity: 1;
-				text-decoration: #333 underline;
+		@include respond(over-md) {
+			position: absolute;
+			left: 30px;
+			top: 30px;
+			a {
+				transition: all 100ms linear;
+				opacity: 0.35;
+				text-decoration: none;
+				&.active {
+					opacity: 1;
+					text-decoration: #333 underline;
+				}
 			}
 		}
 	}
