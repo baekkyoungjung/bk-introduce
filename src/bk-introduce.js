@@ -8,7 +8,8 @@ w.onload = () => {
 		startDelay: 1000,
 	};
 	const typed = new Typed("#bk-typed", options);
-	portFolioScrollEvt();
+	!Modernizr.touch && portFolioScrollEvt();
+	
 };
 
 const offset = el => {
