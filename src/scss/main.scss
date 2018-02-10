@@ -58,10 +58,18 @@ body {
 	background-color: $bodyBackColor;
 }
 
-#bk-wrapper {
-	
+#bk-main {
 
-	#bk-head {
+	.bk-container {
+		width: 85%;
+		@include respond(over-md) {
+			width: 60%;
+			background-color: transparent;
+		}
+		margin: 0 auto;
+	}
+
+	section#bk-head {
 		padding-top: 10%;
 		background-color: #fff;
 		@include respond(over-md) {
@@ -95,38 +103,30 @@ body {
 				}
 			}
 		}
-	}
-	#about-bk {
-		margin-top: 50px;
-		text-align: center;
-		padding: 20px;
-		width: 90%;
-		margin: 40px auto 0;
-		.about-contents {
-			padding: 20px 0;
-			// &:after {
-				// content: "";
-			// }
-			min-height: 100px;
-			> div.head-desc {
-				font-weight: bold;
-				font-size: 1.3em;
-				padding: 10px;
+		#about-bk {
+			margin-top: 50px;
+			text-align: center;
+			padding: 20px;
+			width: 90%;
+			margin: 40px auto 0;
+			.about-contents {
+				padding: 20px 0;
+				// &:after {
+					// content: "";
+				// }
+				min-height: 100px;
+				> div.head-desc {
+					font-weight: bold;
+					font-size: 1.3em;
+					padding: 10px;
+				}
+			}
+			.about-contents:not(:last-child) {
 			}
 		}
-		.about-contents:not(:last-child) {
-		}
 	}
-
-	.bk-container {
-		width: 85%;
-		@include respond(over-md) {
-			width: 60%;
-			background-color: transparent;
-		}
-		margin: 0 auto;
-	}
-	#bk-who-am-i {
+	
+	section#bk-who-am-i {
 		background-color: $typedBackColor;
 		// min-height: 330px;
 		// height: 50vh;
@@ -142,7 +142,7 @@ body {
 			padding: 50px 0;
 		}
 	}
-	#bk-contents {
+	section#bk-wrapper {
 		// font-family: KoPubBatang_ProL;
 		font-size: 1.1em;
 		@include respond(over-sm) {
@@ -173,93 +173,74 @@ body {
 			// 	height: auto;
 			// 	overflow: unset;
 			// }
-		}
-		#bk-portfolio {
-			position: relative;
-			.bk-container {
-				line-height: 1.55em;
-				font-size: 0.9em;
-				h3 {
-					color: rgba(48, 48, 48, 0.8);
-					text-align: center!important;
-					// font-size: 1.6em;
-				}
-				// width: 70%;
-			}
-			.bk-container > div {
-				// width: 90%;
-				// float: left;
-				border-bottom: 1px solid #d2d2d2;
-				padding: 20px 0;
-				a {
-					color: rgb(51, 51, 51);
-					text-decoration: underline;
-				}
-				// text-align: left;
-				&:nth-child(even) {
-					// text-align: right;
-					// float: right;
-				}
-			}
-			#tyle-landing-screenshot {
-				background-image: url("./public/imgs/tyle-landing.jpg");
-			}
-			#bk-invite-screenshot {
-				background-image: url("./public/imgs/invite-bkbj.jpg");
-			}
-			#bk-introduce-screenshot {
-				background-image: url("./public/imgs/bk-introduce.jpg");
-			}
-			#bk-ckoverflow-screenshot {
-				background-image: url("./public/imgs/chicken-overflow.jpg");
-			}
-			#bk-interview-screenshot {
-				background-image: url("./public/imgs/gpeople-bk.jpg");
-			}
-			#bk-interview-b-screenshot {
-				background-image: url("./public/imgs/team-interview.jpg");
-			}
-			#bk-ckoverflow h2 span {
-				font-family: Arial;
-			}
-			.ck-logo {
-				width: 35px;
-				vertical-align: bottom;
-			}
-		}
-		.pic-thumb {
-			text-indent: -99999em;
-			width: 100%;
-			background-repeat: no-repeat;
-			background-size: auto;
-			background-position: center center;
-			margin: 0 auto;
-			min-height: 345px;
-			color: transparent;
-		}
-		p {
-			word-break: break-all;
-			margin: 0 0 15px;
-			text-indent: 7px;
 		}	
-		h3 {
-			font-weight: bold;
-			margin-bottom: 15px;
-			// font-size: 1.8em;
+	}
+
+	section#bk-portfolio {
+		position: relative;
+		.bk-container {
+			line-height: 1.55em;
+			font-size: 1.1em;
+			h3 {
+				color: rgba(48, 48, 48, 0.8);
+				text-align: center!important;
+				// font-size: 1.6em;
+			}
+			// width: 70%;
 		}
-		> section {
-			padding: 30px 0;
+		.bk-container > div {
+			// width: 90%;
+			// float: left;
+			border-bottom: 1px solid #d2d2d2;
+			padding: 20px 0;
+			a {
+				color: rgb(51, 51, 51);
+				text-decoration: underline;
+			}
+			// text-align: left;
+			&:nth-child(even) {
+				// text-align: right;
+				// float: right;
+			}
 		}
-		> section:nth-child(even) {
-			background-color: $evenBackColor;
+		#tyle-landing-screenshot {
+			background-image: url("./public/imgs/tyle-landing.jpg");
 		}
-		a:focus {
-			outline: none;	
+		#bk-invite-screenshot {
+			background-image: url("./public/imgs/invite-bkbj.jpg");
 		}
-		hr {
-			border-top: 1px solid #d2d2d2
+		#bk-introduce-screenshot {
+			background-image: url("./public/imgs/bk-introduce.jpg");
+		}
+		#bk-ckoverflow-screenshot {
+			background-image: url("./public/imgs/chicken-overflow.jpg");
+		}
+		#bk-interview-screenshot {
+			background-image: url("./public/imgs/gpeople-bk.jpg");
+		}
+		#bk-interview-b-screenshot {
+			background-image: url("./public/imgs/team-interview.jpg");
+		}
+		#bk-ckoverflow h2 span {
+			font-family: Arial;
+		}
+		.ck-logo {
+			width: 35px;
+			vertical-align: bottom;
 		}
 	}
+	.pic-thumb {
+		text-indent: -99999em;
+		width: 100%;
+		background-repeat: no-repeat;
+		background-size: auto;
+		background-position: center center;
+		margin: 0 auto;
+		min-height: 345px;
+		color: transparent;
+	}
+
+	
 	.piccaption {
 		font-size: 0.8em;
 		opacity: 0.4;
@@ -280,10 +261,38 @@ body {
 		background-color: #1B2B34;
 	}
 
+	p {
+		word-break: break-all;
+		margin: 0 0 15px;
+		text-indent: 7px;
+	}	
+	h3 {
+		font-weight: bold;
+		margin-bottom: 15px;
+		// font-size: 1.8em;
+	}
+	> section {
+		padding: 30px 0;
+	}
+	> section:nth-child(even) {
+		background-color: $evenBackColor;
+	}
+	a:focus {
+		outline: none;	
+	}
+	hr {
+		border-top: 1px solid #d2d2d2
+	}
+
 }
 
 html.no-touch {
 	#table-content {
+		&:before {
+			content: '목차';
+			font-size: 1.2em;
+			margin-left: 14px;
+		}
 		@include respond(over-md) {
 			position: absolute;
 			left: 30px;
