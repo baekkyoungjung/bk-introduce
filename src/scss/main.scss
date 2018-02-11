@@ -173,7 +173,10 @@ body {
 			// 	height: auto;
 			// 	overflow: unset;
 			// }
-		}	
+		}
+		> div.bk-container {
+			margin-bottom: 50px;
+		}
 	}
 
 	section#bk-portfolio {
