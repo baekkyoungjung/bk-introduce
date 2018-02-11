@@ -50,7 +50,7 @@ const portFolioScrollEvt = () => {
 	let activeTable = portfolioArr[0];
 
 	w.addEventListener('scroll', () => {
-		if (d.documentElement.classList.contains('no-touch') && !Modernizr.touch && window.innerWidth > 1200) {
+		if (window.innerWidth > 1200) {
 			isSetTableFixed();
 			isSetActiveTable();
 		} else {
