@@ -181,6 +181,7 @@ body {
 
 	section#bk-portfolio {
 		position: relative;
+
 		.bk-container {
 			line-height: 1.55em;
 			font-size: 1.1em;
@@ -190,6 +191,33 @@ body {
 				// font-size: 1.6em;
 			}
 			// width: 70%;
+
+			#table-content {
+				&:before {
+					content: '목차';
+					font-size: 1.2em;
+					margin-left: 14px;
+				}
+				@include respond(over-md) {
+					position: absolute;
+					left: 30px;
+					top: 30px;
+					a {
+						-webkit-transition: all 100ms linear;
+						-moz-transition: all 100ms linear;
+						-ms-transition: all 100ms linear;
+						-o-transition: all 100ms linear;
+						transition: all 100ms linear;
+						
+						opacity: 0.35;
+						text-decoration: none;
+						&.active {
+							opacity: 1;
+							text-decoration: #333 underline;
+						}
+					}
+				}
+			}
 		}
 		.bk-container > div {
 			// width: 90%;
@@ -289,34 +317,6 @@ body {
 
 }
 
-html.no-touch {
-	#table-content {
-		&:before {
-			content: '목차';
-			font-size: 1.2em;
-			margin-left: 14px;
-		}
-		@include respond(over-md) {
-			position: absolute;
-			left: 30px;
-			top: 30px;
-			a {
-				-webkit-transition: all 100ms linear;
-				-moz-transition: all 100ms linear;
-				-ms-transition: all 100ms linear;
-				-o-transition: all 100ms linear;
-				transition: all 100ms linear;
-				
-				opacity: 0.35;
-				text-decoration: none;
-				&.active {
-					opacity: 1;
-					text-decoration: #333 underline;
-				}
-			}
-		}
-	}
-}
 
 @font-face {
 	font-family: 'KoPubDotum_ProL';
