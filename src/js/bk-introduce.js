@@ -77,7 +77,6 @@ class scrollEvents {
 	}
 	
 	isSetTableFixed() {
-		console.log('oentuhoenthunoehtu', w.pageYOffset, this.bkPortfolioHeight);
 		if (w.pageYOffset > (this.bkPortfolioHeight)) {
 			if (d.getElementById('table-content').classList.contains('table-fixed') === false) {
 				d.getElementById('table-content').classList.remove('table-absolute');
