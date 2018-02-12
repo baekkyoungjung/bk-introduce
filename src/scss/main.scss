@@ -193,19 +193,18 @@ body {
 			// width: 70%;
 
 			#table-content {
-				&.table-fixed {
-					position: fixed;
-				}
-				&.table-absolute {
-					position: absolute;
-				}
 				&:before {
 					content: '목차';
 					font-size: 1.2em;
 					margin-left: 14px;
 				}
 				@include respond(over-md) {
-					position: absolute;
+					&.table-fixed {
+						position: fixed;
+					}
+					&.table-absolute {
+						position: absolute;
+					}
 					left: 30px;
 					top: 30px;
 					a {

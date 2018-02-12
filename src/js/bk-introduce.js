@@ -36,6 +36,7 @@ class scrollEvents {
 	constructor() {
 		[
 			'isSetActiveTable',
+			'isSetTableFixed',
 			// 'setDataToState',
 		].forEach(method => {
 			this[method] = this[method].bind(this);
@@ -76,11 +77,14 @@ class scrollEvents {
 	}
 	
 	isSetTableFixed() {
+		console.log('oentuhoenthunoehtu', w.pageYOffset, this.bkPortfolioHeight);
 		if (w.pageYOffset > (this.bkPortfolioHeight)) {
-			if (!d.getElementById('table-content').classList.contains('table-fixed')) {
+			if (d.getElementById('table-content').classList.contains('table-fixed') === false) {
+				d.getElementById('table-content').classList.remove('table-absolute');
 				d.getElementById('table-content').classList.add('table-fixed');
 			}
-		} else if (!d.getElementById('table-content').classList.contains('absolute')) {
+		} else if (d.getElementById('table-content').classList.contains('table-absolute') === false) {
+			d.getElementById('table-content').classList.remove('table-fixed');
 			d.getElementById('table-content').classList.add('table-absolute');
 		}
 	}
