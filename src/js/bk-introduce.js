@@ -57,7 +57,7 @@ class scrollEvents {
 		this.bkPortfolioHeight = d.getElementById('bk-portfolio').offsetTop;
 		this.dataObj = {};
 		this.portfolioArr.map((el, i) => {
-			this.dataObj[el] = this.bkPortfolioHeight + d.getElementById(el).offsetTop;
+			this.dataObj[el] = this.bkPortfolioHeight + (d.getElementById(el).offsetTop - (d.getElementById(el).offsetHeight / 3));
 		});
 	}
 
