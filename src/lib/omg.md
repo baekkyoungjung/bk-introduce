@@ -47,23 +47,20 @@
 	sublime의 default를 tab으로 변경
 	
 -간단한 Slideshow 페이지를 만드는 방법에 관해서 이야기해 보세요.
-	?
+	각장 컴포넌트만들고 데이터를 가공하여 내용주입, absolute left로 조절 하거나 translateX로 이동
 	
 -만약 당신이 올해 기술적 책임자가 되었다면 무엇을 먼저 하시겠습니까?
 	팀원을 성향과 본인에게 특성화 된 능력 파악, 팀원의 약점 교육 및 강점이 부각되는 작업 분배
-
--표준의 중요성에 관해 설명해주세요.
-	?
 	
 -Flash of Unstyled Content에 관해 설명해주세요. 또 FOUC를 피하기 위해선 어떻게 해야 하나요?
 	css가 적용되기전 벌거숭이 html이 등장
-	load되기전 display none으로 슴기거나 script태그나 css를 head상단으로 옮김
+	block script태그나 css를 head상단으로 옮김, 정 안되면 load되기전 display none으로 숨기고 로드
 
 -ARIA와 screenreader에 대해 설명해주세요. 또 접근성을 지원하는 웹사이트를 어떻게 만드는지에 대해도 설명해주세요.
-
+	누구나 사용하도록 돋보기, 위젯 등 접근성 향상
 	
 -CSS 애니메이션과 JavaScript 애니메이션의 차이점에 관해 설명해주세요.
-
+	google javascript 애니메이션 글 읽어보면 willchange사용하고 제대로 쓰면 css보다 우월하다고 하는데 나는 class를 통한 css 애니메이션이 더 좋은것같음
 	
 -CORS는 무엇의 약자이고 어떤 문제에 대해서 언급하는 것인가요?
-
+	cross origin resource sharing 처음 도메인과 다른 도메인에서 리소스가 요청될경우 요청작업을 함. 허용된 도메인이고, 사용해도 되는지. root 도메인에서 origin allow *나 서버사이드에서 헤더 작업을 통해 해결

@@ -145,9 +145,9 @@ body {
 	section#bk-wrapper {
 		// font-family: KoPubBatang_ProL;
 		font-size: 1.1em;
-		@include respond(over-sm) {
-			font-size: 1.25em;
-		}
+		// @include respond(over-sm) {
+			// font-size: 1.25em;
+		// }
 		line-height: 1.68em;
 		.no-indent {
 			text-indent: 0!important;
@@ -193,6 +193,12 @@ body {
 			// width: 70%;
 
 			#table-content {
+				&.table-fixed {
+					position: fixed;
+				}
+				&.table-absolute {
+					position: absolute;
+				}
 				&:before {
 					content: '목차';
 					font-size: 1.2em;
