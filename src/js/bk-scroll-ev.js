@@ -1,38 +1,4 @@
-const w = window;
-const d = document;
-
-// event listener 함수 정리하자
-
-w.onload = () => {
-	// initTyped();
-	portFolioScrollEvt();
-};
-
-// const initTyped = () => {
-// 	const options = {
-// 		// strings: ["", "<span class='type-reserved-word'>const</span> <span class='type-variable'>amI</span> = <span class='type-variable'>'정백경'</span>; \n <span class='type-reserved-word'>let</span> <span class='type-variable'>whoIsHe</span> = <span class='type-variable'>'개발자'</span>; \n <span class='type-variable'>whoIsHe</span> = <span class='type-variable'>'이제 조금은 뭘 아는 프론트앤드 개발자';</span>"],
-// 		strings: ["", "이  력  서", "정백경 \n \n이제 조금은 뭘 아는 \n프론트앤드 개발자"],
-// 		typeSpeed: 70,
-// 		startDelay: 1000,
-// 	};
-// 	const typed = new Typed("#bk-typed", options);
-// };
-
-const portFolioScrollEvt = () => {
-	// const bodyHeight = d.body.scrollHeight;
-	// const bkPortfolioHeight = bodyHeight - offset(d.getElementById('bk-portfolio')).height;
-	const scrollEventsInstance = new scrollEvents();
-	w.addEventListener('scroll', () => {
-		if (window.innerWidth > 1200) {
-			scrollEventsInstance.isSetTableFixed();
-			scrollEventsInstance.isSetActiveTable();
-		} else {
-			d.getElementById('table-content').style.position = 'static';
-		}
-	});	
-};
-
-class scrollEvents {
+export default class scrollEvents {
 	constructor() {
 		[
 			'isSetActiveTable',

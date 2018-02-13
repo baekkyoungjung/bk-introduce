@@ -78,6 +78,7 @@ body {
 			.info-bk {
 				> p:first-child {
 					font-size: 2.7em;
+					margin: 0;
 				}
 			}
 			.info-contact {
@@ -101,7 +102,7 @@ body {
 			width: 90%;
 			margin: 40px auto 0;
 			.about-contents {
-				padding: 20px 0;
+				padding: 20px;
 				// &:after {
 					// content: "";
 				// }
@@ -111,6 +112,9 @@ body {
 					font-size: 1.3em;
 					padding: 10px;
 				}
+				p {
+					font-size: 0.9em;
+				}
 			}
 			.about-contents:not(:last-child) {
 			}
@@ -118,10 +122,12 @@ body {
 	}
 	
 	section#bk-who-am-i {
+		color: #fff;
 		background-color: $typedBackColor;
 		// min-height: 330px;
 		// height: 50vh;
 		#bk-typed {
+			line-height: 1.3em;
 			text-align: center;
 			color: #c5c5c5;
 			font-size: 2em;
