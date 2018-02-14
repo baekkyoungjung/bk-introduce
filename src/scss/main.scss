@@ -170,10 +170,12 @@ body {
 			// 	overflow: unset;
 			// }
 		}
-		#bk-dev-life {
-			// margin-top: 50px;
+		> div:nth-child(even) {
 			background-color: #f0f0f0;
 		}
+		// #bk-dev-life {
+			// margin-top: 50px;
+		// }
 	}
 
 	section#bk-portfolio {
