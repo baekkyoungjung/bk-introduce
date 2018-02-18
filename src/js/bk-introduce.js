@@ -5,8 +5,8 @@ const d = document;
 
 w.onload = () => {
 	// initTyped();
-	// document.body.classList.remove('hidden');
 	portFolioScrollEvt();
+	document.body.classList.remove('hidden');
 };
 
 // const initTyped = () => {
