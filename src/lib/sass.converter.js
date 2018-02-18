@@ -48,7 +48,7 @@
 		}
 		head.appendChild(style);
 		setTimeout(() => {
-			console.log('1000 sass js');
+			console.log('1000 sass js remove invisible');
 			document.body.classList.remove('invisible');
 		}, 300)
 	}
