@@ -6,7 +6,6 @@ const d = document;
 w.onload = () => {
 	// initTyped();
 	portFolioScrollEvt();
-	console.log('js');
 };
 
 // const initTyped = () => {
