@@ -47,6 +47,5 @@
 		  style.appendChild(document.createTextNode(css));
 		}
 		head.appendChild(style);
-		document.body.classList.remove('hidden');
 	}
 })();
