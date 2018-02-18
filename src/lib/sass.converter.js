@@ -47,5 +47,8 @@
 		  style.appendChild(document.createTextNode(css));
 		}
 		head.appendChild(style);
+		setTimeout(() => {
+			console.log('1000 sass js');
+		}, 300)
 	}
 })();
