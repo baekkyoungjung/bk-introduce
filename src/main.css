@@ -1,16 +1,7 @@
-/*body {
+body {
 	font-family: KoPubDotum_ProL;
+	font-weight: 300;
 	background-color: rgba(200, 200, 200, 0.1);
-}
-#bk-main .bk-container {
-	width: 85%;
-	margin: 0 auto;
-}
-@media only screen and (min-width: 992px) {
-	#bk-main .bk-container {
-		width: 60%;
-		background-color: transparent;
-	}
 }
 #bk-main section#bk-head {
 	padding-top: 10%;
@@ -33,6 +24,7 @@
 }
 #bk-main section#bk-head #bk-card .info-bk > p:first-child {
 	font-size: 2.7em;
+	margin: 0;
 }
 #bk-main section#bk-head #bk-card .info-contact {
 	padding-top: -10%;
@@ -56,7 +48,7 @@
 	margin: 40px auto 0;
 }
 #bk-main section#bk-head #about-bk .about-contents {
-	padding: 20px 0;
+	padding: 20px;
 	min-height: 100px;
 }
 #bk-main section#bk-head #about-bk .about-contents > div.head-desc {
@@ -64,10 +56,15 @@
 	font-size: 1.3em;
 	padding: 10px;
 }
+#bk-main section#bk-head #about-bk .about-contents p {
+	font-size: 0.9em;
+}
 #bk-main section#bk-who-am-i {
+	color: #fff;
 	background-color: #1b2b34;
 }
 #bk-main section#bk-who-am-i #bk-typed {
+	line-height: 1.3em;
 	text-align: center;
 	color: #c5c5c5;
 	font-size: 2em;
@@ -79,37 +76,56 @@
 }
 #bk-main section#bk-wrapper {
 	font-size: 1.1em;
-	line-height: 1.68em;
-}
-@media only screen and (min-width: 768px) {
-	#bk-main section#bk-wrapper {
-		font-size: 1.25em;
-	}
 }
 #bk-main section#bk-wrapper .no-indent {
 	text-indent: 0 !important;
 }
-#bk-main section#bk-wrapper > div.bk-container {
-	margin-bottom: 50px;
+#bk-main section#bk-wrapper > div:nth-child(even) {
+	background-color: #f0f0f0;
 }
 #bk-main section#bk-portfolio {
 	position: relative;
-}
-#bk-main section#bk-portfolio .bk-container {
-	line-height: 1.55em;
-	font-size: 1.1em;
 }
 #bk-main section#bk-portfolio .bk-container h3 {
 	color: rgba(48, 48, 48, 0.8);
 	text-align: center;
 }
 #bk-main section#bk-portfolio .bk-container > div {
+	padding-bottom: 30px;
 	border-bottom: 1px solid #d2d2d2;
-	padding: 20px 0;
 }
-#bk-main section#bk-portfolio .bk-container > div a {
-	color: #333;
-	text-decoration: underline;
+#bk-main section#bk-portfolio .bk-container #table-content {
+	border-bottom: none;
+}
+#bk-main section#bk-portfolio .bk-container #table-content:before {
+	content: '목차';
+	font-size: 1.2em;
+	margin-left: 14px;
+}
+@media only screen and (min-width: 992px) {
+	#bk-main section#bk-portfolio .bk-container #table-content {
+		left: 30px;
+		top: 80px;
+	}
+	#bk-main section#bk-portfolio .bk-container #table-content.table-fixed {
+		position: fixed;
+	}
+	#bk-main section#bk-portfolio .bk-container #table-content.table-absolute {
+		position: absolute;
+	}
+	#bk-main section#bk-portfolio .bk-container #table-content a {
+		-webkit-transition: all 100ms linear;
+		-moz-transition: all 100ms linear;
+		-ms-transition: all 100ms linear;
+		-o-transition: all 100ms linear;
+		transition: all 100ms linear;
+		opacity: 0.35;
+		text-decoration: none;
+	}
+	#bk-main section#bk-portfolio .bk-container #table-content a.active {
+		opacity: 1;
+		text-decoration: #333 underline;
+	}
 }
 #bk-main section#bk-portfolio #tyle-landing-screenshot {
 	background-image: url("./public/imgs/tyle-landing.jpg");
@@ -135,6 +151,23 @@
 #bk-main section#bk-portfolio .ck-logo {
 	width: 35px;
 	vertical-align: bottom;
+}
+#bk-main .bk-container {
+	width: 85%;
+	margin: 0 auto;
+	line-height: 1.65em;
+	font-size: 1em;
+	padding: 50px 0;
+}
+@media only screen and (min-width: 992px) {
+	#bk-main .bk-container {
+		width: 60%;
+		background-color: transparent;
+	}
+}
+#bk-main .bk-container a {
+	color: #333;
+	text-decoration: underline;
 }
 #bk-main .pic-thumb {
 	text-indent: -99999em;
@@ -170,10 +203,7 @@
 }
 #bk-main h3 {
 	font-weight: bold;
-	margin-bottom: 15px;
-}
-#bk-main > section {
-	padding: 30px 0;
+	margin: 30px 0 15px 0;
 }
 #bk-main > section:nth-child(even) {
 	background-color: #f0f0f0;
@@ -183,31 +213,6 @@
 }
 #bk-main hr {
 	border-top: 1px solid #d2d2d2;
-}
-html.no-touch #table-content:before {
-	content: '목차';
-	font-size: 1.2em;
-	margin-left: 14px;
-}
-@media only screen and (min-width: 992px) {
-	html.no-touch #table-content {
-		position: absolute;
-		left: 30px;
-		top: 30px;
-	}
-	html.no-touch #table-content a {
-		-webkit-transition: all 100ms linear;
-		-moz-transition: all 100ms linear;
-		-ms-transition: all 100ms linear;
-		-o-transition: all 100ms linear;
-		transition: all 100ms linear;
-		opacity: 0.35;
-		text-decoration: none;
-	}
-	html.no-touch #table-content a.active {
-		opacity: 1;
-		text-decoration: #333 underline;
-	}
 }
 @font-face {
 	font-family: 'KoPubDotum_ProL';
@@ -225,4 +230,3 @@ html.no-touch #table-content:before {
 	font-family: 'NanumMyeongjo.woff';
 	src: url('./public/fonts/NanumMyeongjo.woff.woff') format('woff');
 }
-*/
