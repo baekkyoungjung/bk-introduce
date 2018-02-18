@@ -47,9 +47,9 @@
 		  style.appendChild(document.createTextNode(css));
 		}
 		head.appendChild(style);
-		setTimeout(() => {
+		// setTimeout(() => {
 			console.log('1000 sass js remove invisible');
 			document.body.classList.remove('invisible');
-		}, 300)
+		// }, 300)
 	}
 })();
