@@ -49,6 +49,7 @@
 		head.appendChild(style);
 		setTimeout(() => {
 			console.log('1000 sass js');
+			document.body.classList.remove('invisible');
 		}, 300)
 	}
 })();
