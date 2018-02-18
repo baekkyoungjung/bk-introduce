@@ -193,6 +193,7 @@ body {
 				border-bottom: 1px solid #d2d2d2;
 			}
 			#table-content {
+				border-bottom: none;
 				&:before {
 					content: '목차';
 					font-size: 1.2em;
@@ -206,7 +207,7 @@ body {
 						position: absolute;
 					}
 					left: 30px;
-					top: 30px;
+					top: 80px;
 					a {
 						-webkit-transition: all 100ms linear;
 						-moz-transition: all 100ms linear;
