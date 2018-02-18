@@ -6,6 +6,7 @@ const d = document;
 w.onload = () => {
 	// initTyped();
 	portFolioScrollEvt();
+	document.body.classList.remove('invisible');
 };
 
 // const initTyped = () => {

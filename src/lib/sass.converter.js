@@ -10,9 +10,6 @@
 		        scssCode = xmlhttp.responseText;
 		        Sass.writeFile(basename, scssCode);
 		        compile('@import "' + basename + '"; ');
-		        window.onload = () => {
-		        	document.body.classList.remove('hidden');
-		        };
 		    }
 		}
 		xmlhttp.open("GET",url,true);
