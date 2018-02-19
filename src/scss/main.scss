@@ -140,15 +140,15 @@ body {
 			padding: 50px 0;
 		}
 	}
+	.no-indent {
+		text-indent: 0!important;
+	}
 	section#bk-wrapper {
 		// font-family: KoPubBatang_ProL;
 		font-size: 1.1em;
 		// @include respond(over-sm) {
 			// font-size: 1.25em;
 		// }
-		.no-indent {
-			text-indent: 0!important;
-		}
 		.contents.ttd {
 			// &:after {
 			// 	content: '';
