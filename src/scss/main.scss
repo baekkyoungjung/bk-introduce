@@ -226,6 +226,9 @@ body {
 				}
 			}
 		}
+		#kmong-landing-screenshot {
+			background-image: url("./public/imgs/kmong-landing.png");
+		}
 		#tyle-landing-screenshot {
 			background-image: url("./public/imgs/tyle-landing.jpg");
 		}
@@ -271,7 +274,7 @@ body {
 		text-indent: -99999em;
 		width: 100%;
 		background-repeat: no-repeat;
-		background-size: auto;
+		background-size: contain;
 		background-position: center center;
 		margin: 0 auto;
 		min-height: 345px;
