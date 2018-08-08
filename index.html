@@ -13,18 +13,20 @@
 	<script src="./src/lib/sass.converter.js">
 	</script>
 	
-	<script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+
 	<script>
+		firebase.initializeApp({
+		  apiKey: "AIzaSyD-0rwLeGJZzOkAH2Er3Me0nObRVz_6g8A",
+		  authDomain: "bk-introduce.firebaseapp.com",
+		  projectId: "bk-introduce",
+		});
+
+		// Initialize Cloud Firestore through Firebase
+		var db = firebase.firestore();
+		
 	  // Initialize Firebase
-	  var config = {
-	    apiKey: "AIzaSyD-0rwLeGJZzOkAH2Er3Me0nObRVz_6g8A",
-	    authDomain: "bk-introduce.firebaseapp.com",
-	    databaseURL: "https://bk-introduce.firebaseio.com",
-	    projectId: "bk-introduce",
-	    storageBucket: "bk-introduce.appspot.com",
-	    messagingSenderId: "720003085942"
-	  };
-	  firebase.initializeApp(config);
 	</script>
 </head>
 <body class="invisible">
