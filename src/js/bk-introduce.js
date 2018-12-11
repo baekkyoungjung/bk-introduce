@@ -5,9 +5,14 @@ const d = document;
 
 w.onload = () => {
 	// initTyped();
-	console.log("Post----");
-	window.postMessage('Post message from web');
 	portFolioScrollEvt();
+	setTimeout(() => {
+		alert('alert post');
+		console.log('Post----');
+		window.postMessage = function(data) {
+		  	__REACT_WEB_VIEW_BRIDGE.postMessage('------------------hahaha---------------');
+		};
+	}, 1000);
 };
 
 // const initTyped = () => {
