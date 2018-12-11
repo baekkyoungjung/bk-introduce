@@ -5,6 +5,7 @@ const d = document;
 
 w.onload = () => {
 	// initTyped();
+	window.postMessage('Post message from web');
 	portFolioScrollEvt();
 };
 
