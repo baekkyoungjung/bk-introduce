@@ -7,7 +7,7 @@ w.onload = () => {
 	// initTyped();
 	portFolioScrollEvt();
 	setTimeout(() => {
-		alert('alert po333st gogo');
+		alert('alert po3333113st gogo');
 		console.log('Post----');
 		window.postMessage('hahahahahahaha----------');
 	}, 1000);
