@@ -6,13 +6,10 @@ const d = document;
 w.onload = () => {
 	// initTyped();
 	portFolioScrollEvt();
-	window.postMessage = function(data) {
-	  	__REACT_WEB_VIEW_BRIDGE.postMessage('------------------hahaha---------------');
-	};
 	setTimeout(() => {
 		alert('alert post gogo');
 		console.log('Post----');
-		window.postMessage('ntoehuntoeuh');
+		window.postMessage('hahahahahahaha----------', '*')
 	}, 1000);
 };
 
