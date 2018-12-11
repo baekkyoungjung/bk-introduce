@@ -9,7 +9,7 @@ w.onload = () => {
 	setTimeout(() => {
 		alert('alert po333st gogo');
 		console.log('Post----');
-		window.postMessage('hahahahahahaha----------', '*')
+		window.postMessage('hahahahahahaha----------');
 	}, 1000);
 };
 
