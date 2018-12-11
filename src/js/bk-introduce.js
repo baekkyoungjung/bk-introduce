@@ -6,11 +6,6 @@ const d = document;
 w.onload = () => {
 	// initTyped();
 	portFolioScrollEvt();
-	setTimeout(() => {
-		alert('alert po3333113st gogo');
-		console.log('Post----');
-		window.postMessage('hahahahahahaha----------');
-	}, 1000);
 };
 
 // const initTyped = () => {
