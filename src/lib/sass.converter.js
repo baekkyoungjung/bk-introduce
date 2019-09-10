@@ -2,7 +2,6 @@
 	// https://github.com/medialize/browser-sass/issues/2
 	// by https://github.com/bassjobsen
 	function read(url) {
-		console.log('url---', url);
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function(){
 	        if((xmlhttp.status == 0 || xmlhttp.status == 200) && xmlhttp.readyState == 4){
@@ -48,7 +47,7 @@
 		  style.appendChild(document.createTextNode(css));
 		}
 		head.appendChild(style);
-		console.log("document.body--", document);
-		// document.body.classList.remove('invisible');
+		// console.log("document.body--", document.body.classList);
+		document.body.classList.remove('invisible');
 	}
 })();
