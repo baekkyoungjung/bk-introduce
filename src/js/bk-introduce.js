@@ -21,7 +21,7 @@ w.onload = () => {
 const portFolioScrollEvt = () => {
 	// const bodyHeight = d.body.scrollHeight;
 	// const bkPortfolioHeight = bodyHeight - offset(d.getElementById('bk-portfolio')).height;
-	const scrollEventsInstance = new scrollEvents();
+	const scrollEventsInstance = new ScrollEvents();
 	w.addEventListener('scroll', () => {
 		if (window.innerWidth > 1200) {
 			scrollEventsInstance.isSetTableFixed();
@@ -32,7 +32,7 @@ const portFolioScrollEvt = () => {
 	});	
 };
 
-class scrollEvents {
+class ScrollEvents {
 	constructor() {
 		[
 			'isSetActiveTable',
@@ -43,6 +43,7 @@ class scrollEvents {
 		});
 
 		this.portfolioArr = [
+			'bk-soon',
 			'bk-kmong',
 			'bk-tyle',
 			'bk-invite-bk-bj',
