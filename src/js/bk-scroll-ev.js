@@ -9,6 +9,8 @@ export default class scrollEvents {
 		});
 
 		this.portfolioArr = [
+			'bk-dlo',
+			'bk-soon',
 			'bk-kmong',
 			'bk-tyle',
 			'bk-invite-bk-bj',
