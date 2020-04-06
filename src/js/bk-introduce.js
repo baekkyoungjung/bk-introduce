@@ -43,8 +43,9 @@ class ScrollEvents {
 		});
 
 		this.portfolioArr = [
-			'bk-soon',
 			'bk-kmong',
+			'bk-dlo',
+			'bk-soon',
 			'bk-tyle',
 			'bk-invite-bk-bj',
 			'bk-introduce',
